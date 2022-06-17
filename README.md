@@ -1,1 +1,8 @@
-# TFT
+THIS IS A METHOD ABOUT TFT MODEL. A Efficient Temporal Flow Transformer (TFT) Accompanied with Multi-head ProbSparse Self-attention Mechanism for Remaining Useful Life Prognostics.
+
+This project is used to realize an efficient end-to-end Temporal Flow Transformer (TFT) for RUL prognostics of rolling bearings. Its main framework is composed of multi-layer encoders, which can directly extract effective degradation features from the time-frequency representations of raw signals, with two distinctive characteristics: (1) Specially designed multi-head probsparse self-attention mechanism can effectively highlight the dominant attention, which makes the TFT have considerable performance in reducing the computational complexity of extremely long time-series; (2) The TFT trained by knowledge-induced distillation strategy can significantly improve its domain adaptability, making it possible to achieve accurate RUL prediction under cross-operating conditions. Extensive experiments on two life-cycle bearing datasets indicate that the TFT greatly outperforms the existing state-of-the-art methods and provides a new solution for RUL prognostics. More details are available in the paper.
+
+The code of TFT implementation is given in this project. And this code can be verified on various public vibration signal datasets (such as PRONOSTIA dataset and XJTU-SY dataset).
+
+Running environment: Pytorch 1.5.0, Python 3.7.6. This project first runs the dataprocess.py, in which you can modify your own training dataset path. The hyper-parameters of the TFT model can be set in the tft_run.py. Note that leaving a message to the authors if you have any questions.
+
